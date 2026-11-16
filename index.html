@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Study Planner</h1>
+
+    <section class="card">
+      <h2>Tasks</h2>
+      <form id="task-form">
+        <input id="task-input" placeholder="What will you study?" required>
+        <button type="submit">Add</button>
+      </form>
+      <ul id="task-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Timer</h2>
+      <div id="time-display">25:00</div>
+      <form id="timer-form">
+        <input id="timer-minutes" type="number" min="1" value="25">
+        <span>minutes</span>
+        <button type="submit">Start</button>
+        <button type="button" id="timer-stop" class="ghost">Stop</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Progress</h2>
+      <div class="stats">
+        <div><span id="stat-day">0</span><small>Today</small></div>
+        <div><span id="stat-week">0</span><small>This week</small></div>
+        <div><span id="stat-month">0</span><small>This month</small></div>
+      </div>
+    </section>
+
+<section class="syllabus-section">
+  <h2>📚1st monthly exam bksppsc</h2>
+
+  <div class="overall-progress">
+    <h3>Overall Progress</h3>
+    <div class="progress-bar">
+      <div id="overallBar"></div>
+    </div>
+    <p id="overallText">0% Completed</p>
+  </div>
+
+  <div id="syllabusContainer"></div>
+</section>
+
+  </main>
+  <script src="script.js"></script>
+
+
+
+<!-- ROBO EYES ASSISTANT -->
+<div id="robo-widget" class="expr-happy">
+
+  <div class="robo-metal-frame">
+
+    <div class="robo-top">
+      <span class="robo-light"></span>
+      <span class="robo-label">ROBO / 01</span>
+    </div>
+
+    <div class="robo-face">
+
+      <div class="robo-eye">
+        <div class="robo-pupil"></div>
+      </div>
+
+      <div class="robo-eye">
+        <div class="robo-pupil"></div>
+      </div>
+
+      <div class="robo-mouth"></div>
+
+    </div>
+
+    <div class="robo-bottom">
+      <span>●</span>
+      <span>kamranga master</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+</html>
